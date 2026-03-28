@@ -5,27 +5,46 @@ media:
   output: /images
 
 content:
-  - name: pages
-    label: Pages
+  - name: accueil
+    label: Page d'accueil
     type: file
-    path: .
+    path: index.html
     fields:
       - name: title
-        label: Titre de la page
+        label: Titre
         type: string
       - name: content
         label: Contenu
         type: rich-text
         options:
           format: html
-    files:
-      - label: Accueil
-        path: index.html
-      - label: Le Club
-        path: le-club.html
-      - label: Activités
-        path: activites.html
-      - label: Galerie
-        path: galerie.html
-      - label: Contact
-        path: contact.html
+
+  - name: club
+    label: Le Club
+    type: file
+    path: le-club.html
+    fields:
+      - name: title
+        label: Titre
+        type: string
+      - name: content
+        label: Contenu
+        type: rich-text
+        options:
+          format: html
+
+  - name: activites
+    label: Activités
+    type: file
+    path: activites.html
+    fields:
+      - name: title
+        label: Titre
+        type: string
+      - name: content
+        label: Contenu
+        type: rich-text
+        options:
+          format: html
+
+  - name: galerie
