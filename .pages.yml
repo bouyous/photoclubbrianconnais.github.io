@@ -7,15 +7,17 @@ media:
 content:
   - name: pages
     label: Pages
-    type: collection
+    type: file
     path: .
     fields:
       - name: title
-        label: Titre
+        label: Titre de la page
         type: string
       - name: content
         label: Contenu
         type: rich-text
+        options:
+          format: html
     files:
       - label: Accueil
         path: index.html
