@@ -1,0 +1,29 @@
+name: Photo Club Briançonnais
+
+media:
+  input: images
+  output: /images
+
+content:
+  - name: pages
+    label: Pages
+    type: collection
+    path: .
+    fields:
+      - name: title
+        label: Titre
+        type: string
+      - name: content
+        label: Contenu
+        type: rich-text
+    files:
+      - label: Accueil
+        path: index.html
+      - label: Le Club
+        path: le-club.html
+      - label: Activités
+        path: activites.html
+      - label: Galerie
+        path: galerie.html
+      - label: Contact
+        path: contact.html
