@@ -1,0 +1,410 @@
+/* ========================================
+   PHOTO CLUB BRIANÇONNAIS - Style Classique
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+.site-header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.site-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ========================================
+   NAVIGATION
+   ======================================== */
+.main-nav {
+    background: rgba(0,0,0,0.2);
+    padding: 10px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    background: rgba(255,255,255,0.2);
+}
+
+/* ========================================
+   MAIN CONTENT
+   ======================================== */
+.site-main {
+    background: white;
+    min-height: 500px;
+    padding: 40px 0;
+}
+
+.site-main h2 {
+    color: #1e3c72;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #1e3c72;
+    padding-bottom: 10px;
+}
+
+.site-main h3 {
+    color: #2a5298;
+    font-size: 1.5rem;
+    margin: 30px 0 15px 0;
+}
+
+.site-main p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* ========================================
+   INTRO SECTION
+   ======================================== */
+.intro {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border-left: 5px solid #1e3c72;
+}
+
+.intro h2 {
+    border-bottom: none;
+    margin-top: 0;
+}
+
+/* ========================================
+   ACTIVITIES
+   ======================================== */
+.highlights {
+    margin: 40px 0;
+}
+
+.activities-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.activity-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.activity-box:hover {
+    border-color: #1e3c72;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.activity-box h4 {
+    color: #1e3c72;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.activity-box p {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+/* ========================================
+   CTA
+   ======================================== */
+.cta {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.cta p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #1e3c72;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: #2a5298;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ========================================
+   CLUB PAGE
+   ======================================== */
+.club-presentation,
+.club-values,
+.club-info {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.club-values ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.club-values li {
+    padding: 10px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.club-values li:last-child {
+    border-bottom: none;
+}
+
+/* ========================================
+   ACTIVITIES PAGE
+   ======================================== */
+.activity-detail {
+    margin-bottom: 40px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #1e3c72;
+}
+
+.activity-detail h3 {
+    margin-top: 0;
+    color: #1e3c72;
+}
+
+.activity-detail ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.activity-detail li {
+    margin-bottom: 5px;
+}
+
+/* ========================================
+   GALLERY
+   ======================================== */
+.gallery-intro {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 2px solid #e9ecef;
+}
+
+.photo-placeholder {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.photo-title {
+    font-weight: bold;
+    color: #1e3c72;
+    margin-bottom: 5px;
+}
+
+.photo-author {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.gallery-note {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #e9ecef;
+    border-radius: 8px;
+}
+
+/* ========================================
+   CONTACT
+   ======================================== */
+.contact-info,
+.contact-form-section,
+.adhesion {
+    margin-bottom: 40px;
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1e3c72;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #dee2e6;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #1e3c72;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.site-footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.site-footer p {
+    margin-bottom: 5px;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 1.4rem;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav a {
+        width: 200px;
+        text-align: center;
+    }
+
+    .activities-list {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-main {
+        padding: 20px 0;
+    }
+
+    .intro,
+    .activity-detail,
+    .club-presentation,
+    .contact-info,
+    .contact-form-section,
+    .adhesion {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .site-main h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta p {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Photo Club Briançonnais</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-title">📷 Photo Club Briançonnais</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="le-club.html">Le Club</a></li>
+                    <li><a href="activites.html">Activités</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+
+            <h2>Contact</h2>
+
+            <section class="contact-info">
+                <h3>Nous Contacter</h3>
+                <p><strong>Adresse :</strong><br>
+                Ancienne école primaire des Cros<br>
+                05100 Briançon</p>
+
+                <p><strong>Email :</strong><br>
+                contact@photoclub-briancon.fr</p>
+
+                <p><strong>Téléphone :</strong><br>
+                [À compléter]</p>
+            </section>
+
+            <section class="contact-form-section">
+                <h3>Envoyez-nous un message</h3>
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet :</label>
+                        <select id="subject" name="subject">
+                            <option value="info">Demande d'information</option>
+                            <option value="adhesion">Adhésion au club</option>
+                            <option value="activite">Question sur une activité</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </section>
+
+            <section class="adhesion">
+                <h3>Devenir Membre</h3>
+                <p>Envie de rejoindre notre club ? Contactez-nous ou venez nous rencontrer lors de nos réunions !</p>
+                <p><strong>Cotisation annuelle :</strong> [À compléter] €</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Photo Club Briançonnais - Tous droits réservés</p>
+        </div>
+    </footer>
+
+</body>
+</html>
